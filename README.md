@@ -50,7 +50,7 @@ desafio-data-infra/
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <git@github.com:phenric26/desafio-data-infra.git>
+    git clone git@github.com:phenric26/desafio-data-infra.git
     cd desafio-data-infra
     ```
 2.  **Configure o ambiente:**
