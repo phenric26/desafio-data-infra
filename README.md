@@ -101,9 +101,8 @@ No Superset, a validação da conexão deve garantir que a ferramenta consegue *
    - **Username:** `admin`  
    - **Password:** `admin`  
    - **Display Name:** `PostgreSQL` (ou qualquer nome de sua escolha)  
-
-4. Na aba **Advanced** ou **Security**, marque **Allow data upload** para permitir criação de tabelas temporárias.  
-5. Clique em **Connect**. Você deverá ver uma **mensagem de sucesso** indicando que a conexão foi validada.  
+  
+4. Clique em **Connect**. Você deverá ver uma **mensagem de sucesso** indicando que a conexão foi validada.  
 
 **Teste prático usando SQL Lab:**
 
