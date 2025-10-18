@@ -1,5 +1,3 @@
-# docker-compose.yml (VERSÃO FINAL CORRIGIDA)
-
 services:
   postgres:
     image: postgres:13
