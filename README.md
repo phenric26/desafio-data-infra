@@ -29,7 +29,7 @@ Este repositório contém a configuração de um ambiente de desenvolvimento loc
 ## 4. Estrutura de Pastas do Projeto
 
 ```bash
-desafio-infra/
+desafio-data-infra/
 ├── dags/                      
 │   └── test_postgres_conn.py  # DAG de teste de conexão Airflow -> Postgres
 ├── superset/                  
@@ -51,7 +51,7 @@ desafio-infra/
 1.  **Clone o repositório:**
     ```bash
     git clone <git@github.com:phenric26/desafio-data-infra.git>
-    cd desafio-infra
+    cd desafio-data-infra
     ```
 2.  **Configure o ambiente:**
     Copie o arquivo de exemplo `.env.example` para um novo arquivo chamado `.env`.
