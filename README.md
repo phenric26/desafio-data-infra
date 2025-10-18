@@ -106,8 +106,8 @@ No Superset, a validação da conexão deve garantir que a ferramenta consegue *
 
 **Teste prático usando SQL Lab:**
 
-1. Vá em **SQL Lab → SQL Editor**.  
-2. Selecione o banco `analytics`.  
+1. Vá em **SQL Lab **.  
+2. Selecione o banco `PostgreSQL`(Display Name).  
 3. Execute uma query simples para validação:
 
 ```sql
