@@ -66,7 +66,7 @@ desafio-data-infra/
     docker-compose up -d --build
     ```
 
-## 6. Como Validar a Interoperabilidade
+## 6. Como Validar
 
 Após os serviços subirem, acesse as interfaces e realize as seguintes verificações:
 
