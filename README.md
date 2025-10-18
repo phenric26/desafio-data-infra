@@ -63,7 +63,7 @@ desafio-data-infra/
 3.  **Suba os contêineres:**
     Execute o Docker Compose. 
     ```bash
-    docker-compose up -d --build
+    docker compose up -d --build
     ```
 
 ## 6. Como Validar
