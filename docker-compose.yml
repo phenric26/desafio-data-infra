@@ -69,10 +69,15 @@ services:
         condition: service_healthy
     environment:
       - SUPERSET_SECRET_KEY=a_super_secret_key_for_superset
+      - SUPERSET_METADATA_DATABASE_URL=postgresql+psycopg2://${POSTGRES_USER_SUPERSET}:${POSTGRES_PASSWORD_SUPERSET}@postgres:5432/${POSTGRES_DB_SUPERSET}
     ports:
       - "8088:8088"
     volumes:
       - superset_data:/app/superset_home
+      - ./superset/entrypoint.sh:/entrypoint.sh
+      - ./superset/wait-for-it.sh:/wait-for-it.sh
+    entrypoint: ["bash", "/entrypoint.sh"]
+
     
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8088/health || exit 1"]

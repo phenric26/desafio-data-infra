@@ -34,7 +34,7 @@ desafio-data-infra/
 │   └── test_postgres_conn.py  # DAG de teste de conexão Airflow -> Postgres
 ├── superset/                  
 │   ├── Dockerfile             # Dockerfile do Superset
-│   └── superset_config.py     # Configurações customizadas (opcional)
+│   └── entrypoint.sh          # Script de inicialização do Superset (admin, migrações)
 ├── scripts/                   
 │   └── postgres/
 │       └── init.sql           # Script de criação de bancos e usuários
@@ -63,7 +63,7 @@ desafio-data-infra/
 3.  **Suba os contêineres:**
     Execute o Docker Compose. 
     ```bash
-    docker compose up -d --build
+    docker compose up -d 
     ```
 
 ## 6. Como Validar
@@ -101,8 +101,13 @@ No Superset, a validação da conexão deve garantir que a ferramenta consegue *
    - **Username:** `admin`  
    - **Password:** `admin`  
    - **Display Name:** `PostgreSQL` (ou qualquer nome de sua escolha)  
+
+4.  Ou no campo **SQLALCHEMY URI**, cole a seguinte linha e tera um botao de `Test Connection`:
+    ```
+    postgresql+psycopg2://admin:admin@postgres:5432/analytics
+    ```
   
-4. Clique em **Connect**. Você deverá ver uma **mensagem de sucesso** indicando que a conexão foi validada.  
+5. Clique em **Connect**. Você deverá ver uma **mensagem de sucesso** indicando que a conexão foi validada.  
 
 **Teste prático usando SQL Lab:**
 
